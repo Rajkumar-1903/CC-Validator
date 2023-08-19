@@ -1,4 +1,11 @@
 # CC-Validator
+This program uses the Luhn Algorigthm to validate a CC number. code: #include <stdio.h> #include #include
+
+using namespace std;
+
+bool isNumberString(const string& s1) { int lengths = s1.length(); for (int i = 0; i < lengths; i++) { if (s1[i] < '0' || s1[i] > '9') return false; } return true; }
+
+int main() { string ccNumber;
 cout << "This program uses the Luhn Algorigthm ." << endl;
 cout << " enter 'exit' to quit." << endl;
 
